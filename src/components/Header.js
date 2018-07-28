@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import Constants from './../Constants';
 import logotypeURL from './../images/logotype.png';
 
+import Navigation from './Navigation';
+
 const WrappedHeader = styled.header`
     border-bottom: 1px solid ${Constants.cssSmoothDark};
     text-align: center;
@@ -16,6 +18,7 @@ const Logotype = styled.img`
 const HeaderTitle = styled.h1`
     font-size: 2em;
 `;
+const StyledNavigation = styled(Navigation)``;
 
 export default class Header extends Component {
     render(){
@@ -23,6 +26,7 @@ export default class Header extends Component {
             <WrappedHeader>
                 <Logotype src={logotypeURL}/>
                 <HeaderTitle>Welcome on our website!</HeaderTitle>
+                <StyledNavigation></StyledNavigation>
             </WrappedHeader>
         );
     }

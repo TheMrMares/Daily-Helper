@@ -10,6 +10,7 @@ import {
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Welcome from './components/Welcome';
+import TodoList from './components/TodoList';
 
 const StyledHeader = styled(Header)``;
 const StyledFooter = styled(Footer)``;
@@ -39,6 +40,7 @@ class App extends Component {
           <RouterHolder>
             <StyledHeader/>
               <Route exact path="/" component={Welcome} />
+              <Route exact path="/TodoList" component={TodoList} />
             <StyledFooter/>
           </RouterHolder>
         </Router>
