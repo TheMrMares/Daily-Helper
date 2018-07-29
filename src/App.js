@@ -23,6 +23,20 @@ injectGlobal`
     max-width: 100%;
     position: relative;
   }
+  button {
+    background: none;
+    padding: 5px 40px;
+    color: ${Constants.cssFair};
+    text-decoration: none;
+    border: 2px solid ${Constants.cssFair};
+    &:hover {
+        background: ${Constants.cssFair};
+        color: ${Constants.cssDark};
+    }
+  }
+  * {
+    color: ${Constants.cssFair};
+  }
 `;
 const WrappedApp = styled.div`
   color: ${Constants.cssDark}

@@ -26,12 +26,14 @@ export default class Navigation extends Component{
                 path: '/TodoList'
             }]
         }
+        this.counter = 0;
     }
     render(){
         return(
             <WrappedNavigation className={this.props.className}>
                 {this.state.items.map((item, index) => {
-                    return <StyledItem name={item.name} url={item.path} />
+                    this.counter ++;
+                    return <StyledItem name={item.name} url={item.path} key={this.counter} />
                 })}
             </WrappedNavigation>
         );
